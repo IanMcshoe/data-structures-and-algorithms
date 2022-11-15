@@ -7,10 +7,6 @@ public class BinarySearchTree {
     this.root = null;
   }
 
-  // ADD
-
-  // Wrapper
-
   public void add(Integer value) {
     root = addNode(root, value);
   }
@@ -30,10 +26,6 @@ public class BinarySearchTree {
     return current;
   }
 
-
-
-  // CHECK CONTAINS
-
   public boolean contains(int value) {
     Node <Integer> currentNode = root;
     while (!currentNode.value.equals(value)) {
@@ -48,8 +40,6 @@ public class BinarySearchTree {
     }
     return true;
   }
-
-  // Getter for getRoot
   public Node<Integer> getRoot() {
     return root;
   }

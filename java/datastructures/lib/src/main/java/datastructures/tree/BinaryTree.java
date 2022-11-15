@@ -1,13 +1,10 @@
 package datastructures.tree;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+import java.util.*;
 
 public class BinaryTree<T> {
-  // This is the instance variable
   public Node<T> root;
 
-  // THis is the constructor
   public BinaryTree() {
     root = null;
   }
@@ -16,8 +13,6 @@ public class BinaryTree<T> {
     this.root = root;
   }
 
-
-  // PRE ORDER
 
   public ArrayList<T> preOrder() {
     ArrayList<T> valuesArray = new ArrayList<>();
@@ -39,9 +34,6 @@ public class BinaryTree<T> {
     }
     return valuesArray;
   }
-
-
-  // IN ORDER
 
   public ArrayList<T> inOrder() {
     ArrayList<T> valuesArray = new ArrayList<>();
@@ -65,8 +57,6 @@ public class BinaryTree<T> {
 
   }
 
-  // POST ORDER
-
   public ArrayList<T> postOrder() {
     ArrayList<T> valuesArray = new ArrayList<>();
 
@@ -88,9 +78,6 @@ public class BinaryTree<T> {
     return valuesArray;
   }
 
-
-  // MAX
-
   public int findMaxValue() {
     if (this.root.value instanceof Integer) {
       return preOrderMaxFind((Node<Integer>) this.root, Integer.MIN_VALUE);
@@ -99,7 +86,6 @@ public class BinaryTree<T> {
     }
 
   }
-
   private int preOrderMaxFind(Node <Integer> current, int highest) {
       if (current == null) {
       return highest;
@@ -114,6 +100,38 @@ public class BinaryTree<T> {
         highest = preOrderMaxFind(current.right, highest);
       }
       return highest;
+    }
+
+    public ArrayList<T> breadthFirstWrap() {
+    return breadthFirstTraverse(this.root);
+    }
+
+    public ArrayList<T> breadthFirstTraverse(Node<T> root) {
+      Queue<Node<T>> storage = new LinkedList<>();
+      ArrayList<T> result = new ArrayList<>();
+
+      if (root == null) {
+        throw new NoSuchElementException();
+
+      } else {
+        storage.add(root);
+      }
+      while (!storage.isEmpty()) {
+        Node<T> current = storage.remove();
+        result.add(current.value);
+
+        System.out.println("result is " + result);
+        System.out.println("queue has " + storage);
+        System.out.println("node is " + current.value);
+
+        if (current != null && current.left != null) {
+          storage.add(current.left);
+        }
+        if (current != null && current.right != null) {
+          storage.add(current.right);
+        }
+      }
+      return result;
     }
 
 
