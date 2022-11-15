@@ -4,10 +4,8 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class BinaryTree<T> {
-  // This is the instance variable
   public Node<T> root;
 
-  // THis is the constructor
   public BinaryTree() {
     root = null;
   }
@@ -17,7 +15,6 @@ public class BinaryTree<T> {
   }
 
 
-  // PRE ORDER
 
   public ArrayList<T> preOrder() {
     ArrayList<T> valuesArray = new ArrayList<>();
@@ -39,9 +36,6 @@ public class BinaryTree<T> {
     }
     return valuesArray;
   }
-
-
-  // IN ORDER
 
   public ArrayList<T> inOrder() {
     ArrayList<T> valuesArray = new ArrayList<>();
@@ -65,8 +59,6 @@ public class BinaryTree<T> {
 
   }
 
-  // POST ORDER
-
   public ArrayList<T> postOrder() {
     ArrayList<T> valuesArray = new ArrayList<>();
 
@@ -87,9 +79,6 @@ public class BinaryTree<T> {
     valuesArray.add((T) root.value);
     return valuesArray;
   }
-
-
-  // MAX
 
   public int findMaxValue() {
     if (this.root.value instanceof Integer) {
