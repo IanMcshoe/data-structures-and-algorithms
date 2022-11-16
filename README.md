@@ -20,6 +20,12 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
+**Attributions**
+
+- [SharinaS](https://github.com/SharinaS)
+- [Matthew Torres](https://github.com/mtorres6739)
+- [Ben Mills](https://github.com/akkanben)
+
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
 **Table of Contents**
