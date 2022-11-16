@@ -8,36 +8,29 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StackTest {
 
-  // Can successfully push onto a stack
   @Test
-  public void tesForPushToStack() {
+  public void testForPushToStack() {
     Stack stackTest = new Stack();
     stackTest.push(10);
     assertEquals(10,stackTest.top.data);
   }
-
-  // Can successfully push multiple values onto a stack
   @Test
-  public void tesForPushToMultiStack() {
+  public void testForPushToMultiStack() {
     Stack stackTest = new Stack();
     stackTest.push(10);
     stackTest.push(20);
     assertEquals(20,stackTest.top.data);
   }
-
-  // Can successfully pop off the stack
   @Test
-  public void tesForPopFromStack() {
+  public void testForPopFromStack() {
     Stack stackTest = new Stack();
     stackTest.push(10);
     stackTest.push(20);
     assertEquals(20,stackTest.pop());
     assertEquals(10, stackTest.top.data);
   }
-
-// Can successfully empty a stack after multiple pops
   @Test
-  public void tesForPopEmpty() {
+  public void testForPopEmpty() {
     Stack stackTest = new Stack();
     stackTest.push(10);
     stackTest.push(20);
@@ -45,19 +38,15 @@ public class StackTest {
     stackTest.pop();
     assertTrue(stackTest.isEmpty());
   }
-
-// Can successfully peek the next item on the stack
   @Test
-  public void tesForPeekTop() {
+  public void testForPeekTop() {
     Stack stackTest = new Stack();
     stackTest.push(10);
     stackTest.push(20);
     assertEquals(20, stackTest.peek());
   }
-
-// Can successfully instantiate an empty stack
   @Test
-  public void tesForInstantiateEmptyStack() {
+  public void testForInstantiateEmptyStack() {
     Stack stackTest = new Stack();
     assertEquals(null, stackTest.top);
     assertTrue(stackTest.isEmpty());
@@ -65,7 +54,7 @@ public class StackTest {
 
 
   @Test
-  public void tesForEmptyException() {
+  public void testForEmptyException() {
     Stack stackTest = new Stack();
     assertThrows(EmptyStackException.class, ()-> stackTest.pop());
     assertThrows(EmptyStackException.class, ()->stackTest.peek());
