@@ -28,8 +28,3 @@ Inserts a new node after a given node.
 
 Inserts a new node at the end of the list.
 
-## Code Challenge 7 - k-th value from the end of a linked list.
-
-### kthFromEnd
-
-Returns the value of the node that is k from the end of the list.
