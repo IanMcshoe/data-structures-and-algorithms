@@ -1,4 +1,4 @@
-# Linked List
+## Code Challenge 5: Linked List Implementation
 
 ### Methods Implemented
 
@@ -28,6 +28,3 @@ Inserts a new node after a given node.
 
 Inserts a new node at the end of the list.
 
-### kthFromEnd
-
-Returns the value of the node that is k from the end of the list.

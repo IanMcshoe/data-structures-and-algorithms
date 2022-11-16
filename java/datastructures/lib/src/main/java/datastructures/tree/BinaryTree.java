@@ -14,6 +14,7 @@ public class BinaryTree<T> {
   }
 
 
+
   public ArrayList<T> preOrder() {
     ArrayList<T> valuesArray = new ArrayList<>();
     preOrderHelp(this.root, valuesArray);
