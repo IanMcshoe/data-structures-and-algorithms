@@ -25,7 +25,7 @@ public class Queue<T> {
   public T dequeue() throws NoSuchElementException {
     Node<T> current = this.front;
     if (this.back == null) {
-      throw new NoSuchElementException("queue is empty");
+      throw new NoSuchElementException("empty");
     }
     this.front = front.next;
     if (this.front == null) {
@@ -36,7 +36,7 @@ public class Queue<T> {
 
   public T peek() throws NoSuchElementException {
     if (this.front == null) {
-      throw new NoSuchElementException("queue is empty");
+      throw new NoSuchElementException("empty");
     } else {
       return this.front.data;
     }

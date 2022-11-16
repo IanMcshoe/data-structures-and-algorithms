@@ -1,7 +1,5 @@
 # Stacks and Queues Code Challenge
 
-## Code Challenge 10 - Stacks and Queue Implementation
-
 ### Stacks - Methods Implemented
 
 Time complexity is O(n).
@@ -41,8 +39,6 @@ Returns the value of the front node in the queue.
 #### isEmpty()
 
 Returns true if the queue is empty.
-
-## Code Challenge 11 - PseudoQueue
 
 ### PseudoQueue - Methods Implemented
 

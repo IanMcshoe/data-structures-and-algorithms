@@ -18,7 +18,7 @@ public class Stack<T> {
 
   public T pop() throws NoSuchElementException {
     if (this.top == null) {
-      throw new NoSuchElementException("empty stack");
+      throw new NoSuchElementException("empty");
     } else {
       Node<T> temp = top;
       this.top = this.top.next;
