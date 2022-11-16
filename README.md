@@ -21,3 +21,10 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+**Table of Contents**
+
+- [Animal Shelter](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/animalshelter)
+- [Stacks & Queues](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/stacksandqueues)
+- [Linked List](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/linkedlist)
+- [Binary Tree](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/tree)
