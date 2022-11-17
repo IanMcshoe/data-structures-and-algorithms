@@ -25,14 +25,4 @@ public class PseudoQueueTest {
     assertEquals(30, sut.peek());
   }
 
-  @Test
-  public void testForDequeue() {
-    PseudoQueue sut = new PseudoQueue();
-    sut.enqueue(10);
-    sut.enqueue(20);
-    sut.enqueue(30);
-    assertEquals(10, sut.dequeue());
-  }
-
-
 }

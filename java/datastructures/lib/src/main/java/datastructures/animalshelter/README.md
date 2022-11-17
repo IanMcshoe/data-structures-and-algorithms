@@ -1,6 +1,4 @@
-# Animal Shelter Code Challenge
-
-## Code Challenge 12 - Animal Shelter
+# Animal Shelter
 
 Create an Animal Shelter class that holds only cats and dogs.  Create enqueue and dequeue methods to add and remove animals.
 

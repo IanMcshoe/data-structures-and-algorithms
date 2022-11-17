@@ -20,7 +20,6 @@ public class AnimalShelter {
 
   public Animal dequeue(String pref) {
     if (back.isEmpty()) {
-      System.out.println(pref + " no animal found.");
       return null;
     }
     while (!back.isEmpty())
@@ -28,7 +27,6 @@ public class AnimalShelter {
     while (!front.isEmpty() && !front.peek().species.equals(pref))
       back.push(front.pop());
     if (front.isEmpty()) {
-      System.out.println(pref + " no animal found.");
       return null;
     } else {
       Animal animalOut = front.pop();
