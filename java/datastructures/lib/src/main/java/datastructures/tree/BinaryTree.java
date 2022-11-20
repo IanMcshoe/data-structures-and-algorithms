@@ -79,30 +79,6 @@ public class BinaryTree<T> {
     return valuesArray;
   }
 
-  public int findMaxValue() {
-    if (this.root.value instanceof Integer) {
-      return preOrderMaxFind((Node<Integer>) this.root, Integer.MIN_VALUE);
-    } else {
-      throw new IllegalStateException();
-    }
-
-  }
-  private int preOrderMaxFind(Node <Integer> current, int highest) {
-      if (current == null) {
-      return highest;
-      }
-      if (current.value > highest) {
-        highest = current.value;
-      }
-      if (current.left != null) {
-        highest = preOrderMaxFind(current.left, highest);
-      }
-      if (current.right != null) {
-        highest = preOrderMaxFind(current.right, highest);
-      }
-      return highest;
-    }
-
     public ArrayList<T> breadthFirstWrap() {
     return breadthFirstTraverse(this.root);
     }
@@ -134,6 +110,29 @@ public class BinaryTree<T> {
       }
       return result;
     }
+  public int findMaxValue() {
+    if (this.root.value instanceof Integer) {
+      return preOrderMaxFind((Node<Integer>) this.root, Integer.MIN_VALUE);
+    } else {
+      throw new IllegalStateException();
+    }
+
+  }
+  private int preOrderMaxFind(Node <Integer> current, int highest) {
+    if (current == null) {
+      return highest;
+    }
+    if (current.value > highest) {
+      highest = current.value;
+    }
+    if (current.left != null) {
+      highest = preOrderMaxFind(current.left, highest);
+    }
+    if (current.right != null) {
+      highest = preOrderMaxFind(current.right, highest);
+    }
+    return highest;
+  }
 
 
   }
