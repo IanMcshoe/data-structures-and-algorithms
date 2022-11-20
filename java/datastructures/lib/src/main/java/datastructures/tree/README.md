@@ -14,6 +14,8 @@ Write a method extending Binary Trees that returns the maximum value in a binary
  4. The highest value is the first value.
  5. The highest value is a leaf.
 
+![IMG_2336](https://user-images.githubusercontent.com/108303424/202878787-3e423d3d-14c6-40a0-b549-6879bf6ed47a.jpg)
+
 
 ## Breadth First Traversal
 
