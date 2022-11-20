@@ -9,3 +9,6 @@
 Location: `codechallenges/linkedlist/LinkedListChallenges`
 
 Method: `linkedListChallenge06()`
+
+
+Fixed Gradle issue
