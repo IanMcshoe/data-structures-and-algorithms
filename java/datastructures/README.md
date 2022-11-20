@@ -11,4 +11,4 @@ Location: `codechallenges/linkedlist/LinkedListChallenges`
 Method: `linkedListChallenge06()`
 
 
-Fixed Gradle issue
+Fixed Gradle issue 16 to 17
