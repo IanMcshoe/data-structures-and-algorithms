@@ -35,3 +35,4 @@ To run your tests
 - [Linked List](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/linkedlist)
 - [Binary Tree](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/tree)
 - [FizzTree](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/FizzTree)
+- [HashTable](https://github.com/IanMcshoe/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/hashtable)
