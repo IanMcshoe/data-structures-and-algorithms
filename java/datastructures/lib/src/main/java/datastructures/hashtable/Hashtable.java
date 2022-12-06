@@ -57,7 +57,8 @@ import java.util.LinkedList;
         int ascii = (int) character;
         addedAscii += ascii;
       }
-      return addedAscii * 599 % hashTableArray.length;
+      return addedAscii * 999 % hashTableArray.length;
 
     }
+
 }
