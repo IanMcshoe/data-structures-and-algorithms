@@ -20,4 +20,9 @@ public class Node <T> {
   }
 
 
+  public Node(int i, Node node, Node node1, Node node2) {
+  }
+
+  public Node(int i, Node node, Node node1, Node node2, Node node3) {
+  }
 }
