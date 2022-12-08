@@ -30,3 +30,20 @@ Given two "intersecting" binary trees return the values of common nodes they sha
 ## Approach & Efficiency
 
 ![2022-12-01](https://user-images.githubusercontent.com/108303424/204981642-befe9326-b7b1-4bdd-ab1e-e5fcb4a662b2.png)
+
+# LeftJoin
+
+## Code 
+
+![2022-12-08 (2)](https://user-images.githubusercontent.com/108303424/206383101-9d037561-9fec-4b3a-82b3-3b1aa581eb55.png)
+
+## Whiteboard
+
+![WIN_20221208_01_28_19_Pro](https://user-images.githubusercontent.com/108303424/206385448-4dcdb30b-aaf2-4b2a-834a-3f86cae69588.jpg)
+
+
+## Approach & Efficiency
+
+![2022-12-01](https://user-images.githubusercontent.com/108303424/204981642-befe9326-b7b1-4bdd-ab1e-e5fcb4a662b2.png)
+
+
