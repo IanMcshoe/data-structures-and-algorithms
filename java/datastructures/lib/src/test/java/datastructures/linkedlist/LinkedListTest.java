@@ -40,6 +40,8 @@ public class LinkedListTest
     LinkedList sut = new LinkedList();
     sut.append(10);
     sut.append(99);
+    sut.append(123);
+    sut.append(56);
     assertEquals(10, sut.head.value);
 
   }
