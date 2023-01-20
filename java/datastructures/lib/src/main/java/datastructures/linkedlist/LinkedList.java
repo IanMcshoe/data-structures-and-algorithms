@@ -80,6 +80,7 @@ public class LinkedList
     return false;
   }
 
+
   public void removeDuplicates() {
     Node current = head;
     while (current != null) {

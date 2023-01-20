@@ -70,6 +70,7 @@ public class LinkedListTest
       assertTrue(true);
     }
 
+
   @Test
   public void testRemoveDuplicates() {
     LinkedList list = new LinkedList();
