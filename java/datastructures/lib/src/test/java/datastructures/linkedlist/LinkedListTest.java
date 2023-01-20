@@ -1,5 +1,6 @@
 package datastructures.linkedlist;
 
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -68,4 +69,20 @@ public class LinkedListTest
       System.out.println(sut);
       assertTrue(true);
     }
+
+
+  @Test
+  public void testRemoveDuplicates() {
+    LinkedList list = new LinkedList();
+    list.insert(9);
+    list.insert(9);
+    list.insert(16);
+    list.insert(3);
+    list.insert(12);
+    list.insert(3);
+    list.insert(4);
+
+    list.removeDuplicates();
+    Assert.assertEquals("{4} -> {3} -> {12} -> {16} -> {9} -> NULL", list.toString());
+  }
 }

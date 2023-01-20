@@ -81,6 +81,23 @@ public class LinkedList
   }
 
 
+  public void removeDuplicates() {
+    Node current = head;
+    while (current != null) {
+      Node check = current;
+      while (check.next != null) {
+        if (check.next.value == current.value) {
+          check.next = check.next.next;
+          size--;
+        } else {
+          check = check.next;
+        }
+      }
+      current = current.next;
+    }
+  }
+
+
 
   @Override
   public String toString()
